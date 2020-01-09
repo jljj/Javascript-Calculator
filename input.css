@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'VT323', 'Ubuntu Mono', 'Fira Mono';
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b5e3f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b7a9c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006888;
+}
+
+/* Responsive Screen */
+@media only screen and (max-width: 800px) {
+
+    .title {
+        font-size: 2em;
+    }
+
+    .test-area {
+        width: 80vw;
+    }
+}
+
+/* BACKGROUND*/
+
+.container {
+    height: 100vh;
+    background-image: url('giphy.gif');
+    background-size: cover;
+    /* background-position-y: 70%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: -1;
+}
+
+.title {
+    margin-top: 12vh;
+    font-size: 3em;
+}
+
+.test-area {
+    width: 30vw;
+    height: 70vh;
+    box-sizing: border-box;
+    padding: 2em;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin: auto;
+    text-align: left;
+    color: rgb(2, 40, 90);
+    overflow: auto;
+}
+
+.gridbox {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "g5 g5"
+    "g6 g6"
+    "g7 g7"
+    "g1 g2" 
+    "g3 g4"
+     ;
+}
+
+.add { 
+  grid-area: g1; 
+  size: 100px;
+}
+
+.subtract{ 
+  grid-area: g2; 
+}
+
+.mutiply {
+  grid-area: g3;
+}
+
+.division {
+  grid-area: g4;
+}
+
+.a {
+  grid-area: g5;
+  line-height: 0.5cm;
+}
+
+.b {
+  grid-area: g6;
+}
+
+#BoxText2 {
+  border: 2px gray dashed;
+  padding: 6px;
+  width: 220px;
+  background-color: #fafafa;
+}
+
+.c {
+    grid-area:g7;
+}

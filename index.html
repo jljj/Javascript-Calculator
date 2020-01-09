@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Javascript Calculator</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="input.css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Code|Ubuntu+Mono|VT323&display=swap">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Javascript Calculator</div>
+
+    <div class="test-area">
+      <center>
+        <div id="BoxText2">
+            Answer:
+            <div class="answer-display"></div>
+            </div>
+            <br>
+        <div class="gridbox">
+            
+          <!-- Operation Buttons -->
+          <div class="add">
+            <input type="button" value="+" onclick="addNum()">
+          </div>
+          <div class="subtract">
+            <input type="button" value="-" onclick="subtractNum()">
+          </div>
+          <div class="multiply">
+            <input type="button" value="×" onclick="multiplyNum()">
+          </div>
+          <div class="division">
+            <input type="button" value="÷" onclick="divisionNum()">
+          </div>
+          
+          <!-- <input type="button" value="×" class="mutiply" onclick="multiplyNum()">
+          <input type="button" value="÷" class="division" onclick="divisionNum()"> -->
+          <input class="a" type="number">
+          <input class="b" type="number">
+          <div class="c"></div>
+        </div>
+
+        <p>&nbsp;</p>
+        <!-- Calculation Results -->
+        </center>
+    <script src="input.js"></script>
+  </div>
+</body>
+
+</html>
